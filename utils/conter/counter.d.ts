@@ -1,0 +1,1 @@
+export declare function setupCounter(el: HTMLElement): void;
