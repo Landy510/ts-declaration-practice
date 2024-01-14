@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './utils/counter/counter';
+import { isSmaller } from './utils/compare/isSmaller';
 
 
 document.querySelector('#app').innerHTML = `
@@ -22,5 +22,5 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
-setupCounter(10);
+isSmaller(10, 100);
+isSmaller(10, true);
